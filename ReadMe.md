@@ -9,9 +9,8 @@ python3 ./mini_capsule.py
 
 ### Acknowledgement
 
-- [capsnet.pytorch](https://github.com/andreaazzini/capsnet.pytorch.git)
 
-- [CapsNet-Keras](https://github.com/naturomics/XifengGuo/CapsNet-Keras.git)
+- [CapsNet-Keras](https://github.com/XifengGuo/CapsNet-Keras)
 
-- [CapsNet-Tensorflow](https://github.com/naturomics/CapsNet-Tensorflow.git)
+- [CapsNet-Tensorflow](https://github.com/naturomics/CapsNet-Tensorflow)
 
