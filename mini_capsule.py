@@ -93,7 +93,7 @@ class LengthLayer(Layer):
 
     def compute_output_shape(self, input_shape):
         *output_shape, _ = input_shape
-        return (output_shape,)
+        return tuple(output_shape)
 
 
 #
@@ -142,9 +142,9 @@ if __name__ == "__main__":
     model = Model([x, mask_input], [output_capsule, dec])
     plot_model(model, 'capsule.png', show_shapes=True, rankdir='TB')
     model.summary()
-    model.compile(optimizer='adam', loss=[ margin_loss, 'mae'], metrics=[ margin_loss, 'mae'])
+    model.compile(optimizer='adam', loss=[ margin_loss, 'mae' ], metrics=[ margin_loss, 'mae'])
 
     # train capsule model
-    model.fit([X, Y], [Y, X], batch_size=32, epochs=20, validation_split=0.1)
+    model.fit([X, Y], [Y, X], batch_size=128, epochs=50, validation_split=0.2)
     model.save_weights('capsule_trained.h5')
 
