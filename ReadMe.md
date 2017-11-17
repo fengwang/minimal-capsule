@@ -4,8 +4,15 @@
 
 ### Usage
 ```
-python3 ./mini_capsule.py
+git clone https://github.com/fengwang/minimal-capsule.git
+cd ./minimal-capsule
+pip install keras tensorflow
+python ./mini_capsule.py
 ```
+
+### Performance
+mean absolute error at the first 10 steps:
+![](performance.jpg)
 
 ### Acknowledgement
 
